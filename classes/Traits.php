@@ -1,7 +1,7 @@
 <?php
 
 trait CodeProducts {
-    
+
     // methods
     // code products
     public function getRandomCode($length = 5) {
@@ -14,3 +14,4 @@ trait CodeProducts {
         return $randomString;
     }
 }
+

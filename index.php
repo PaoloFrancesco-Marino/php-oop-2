@@ -3,9 +3,11 @@
  * Include
  * ********/ 
 
-include_once __DIR__ . '/classes/electronics.php';
+include_once __DIR__ . '/classes/Electronics.php';
 
-include_once __DIR__ . '/classes/smartphone.php';
+include_once __DIR__ . '/classes/Smartphone.php';
+
+include_once __DIR__ . '/classes/Computer.php';
 
 
 
@@ -19,30 +21,48 @@ include_once __DIR__ . '/classes/smartphone.php';
     <title>OOP-2</title>
 </head>
 <body>
+    <h2>Smartphone</h2>
     <ul>
-        <li>
-            <?php 
-                echo $smartphone1->printProducts() . $smartphone1->printElectronics() .
-                    $smartphone1->printSmartphoneSpecs();
-            ?>
-        </li>
+        <?php 
+            echo $smartphone1->printProducts() . $smartphone1->printElectronics() .
+                $smartphone1->printSmartphoneSpecs();
+        ?>
+    </ul>
+    <ul>
+        <?php 
+        echo $smartphone2->printProducts() . $smartphone2->printElectronics() .
+            $smartphone2->printSmartphoneSpecs();
+        ?>
+    </ul>
 
-        <li>
-            <?php 
-            echo $smartphone2->printProducts() . $smartphone2->printElectronics() .
-                $smartphone2->printSmartphoneSpecs();
-            ?>
-        </li>
-        <li>
-            <?php 
-            echo $smartphone3->printProducts() . $smartphone3->printElectronics() .
-                $smartphone3->printSmartphoneSpecs();
-            ?>
-        </li>
+    <ul>
+        <?php 
+        echo $computer1->printProducts() . $smartphone3->printElectronics() .
+            $smartphone3->printSmartphoneSpecs();
+        ?>
+    </ul>
+
+    <h2>Computer</h2>    
+    <ul>
+        <?php 
+        echo $computer1->printProducts() . $computer1->printElectronics() .
+            $computer1->printComputerSpecs();
+        ?>
+    </ul>
+
+    <ul>
+        <?php 
+        echo $computer2->printProducts() . $computer2->printElectronics() .
+            $computer2->printComputerSpecs();
+        ?>
+    </ul>
+
+    <ul>
+        <?php 
+        echo $computer3->printProducts() . $computer3->printElectronics() .
+            $computer3->printComputerSpecs();
+        ?>
     </ul>
     
-    
-    
-
 </body>
 </html>

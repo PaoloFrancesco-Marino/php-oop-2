@@ -17,7 +17,9 @@ class Products {
 
     // methods
     public function printProducts() {
-        return $this->categories . $this->getRandomCode();
+        return "
+            <li>$this->categories </li>
+            <li>{$this->getRandomCode()}</li>";
     }
 
 

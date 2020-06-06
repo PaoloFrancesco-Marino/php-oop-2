@@ -24,7 +24,12 @@ class Electroncics extends Products {
 
     // method
     public function printElectronics() {
-        return $this->brand . $this->name . $this->type . $this->condition . $this->price;
+        return "
+            <li>$this->brand </li>
+            <li>$this->name </li>
+            <li>$this->type </li>
+            <li>$this->condition </li>
+            <li>$this->price €</li>";
     }
 }
 
