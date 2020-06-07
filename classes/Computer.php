@@ -9,9 +9,9 @@ class Computers extends Electroncics {
     public $hd;
     public $monitor;
     public $weight;
-
+    public $test = array();
     // constructor
-    public function __construct($_categories,$_brand,   $_model, $_type, $_condition, $_price, $_processor, $_os, $_ram, $_hd, $_monitor, $_weight) {
+    public function __construct($_categories, $_brand,   $_model, $_type, $_condition, $_price, $_processor, $_os, $_ram, $_hd, $_monitor, $_weight) {
         parent::__construct($_categories, $_brand,   $_model, $_type, $_condition, $_price,);
 
         $this->processor = $_processor;

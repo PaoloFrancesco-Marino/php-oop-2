@@ -15,3 +15,11 @@ trait CodeProducts {
     }
 }
 
+trait Discount {
+    public function Discount($perc) {
+        $discount = $this->price * $perc / 100;
+        $discount_price = $this->price - $discount;
+        
+        return number_format($discount_price, 0);
+    }
+}

@@ -5,6 +5,7 @@ include_once __DIR__ . '/Traits.php';
 class Products {
     // import traits
     use CodeProducts;
+    use Discount;
 
     // Properties
     public $categories;
@@ -21,7 +22,6 @@ class Products {
             <li>$this->categories </li>
             <li>{$this->getRandomCode()}</li>";
     }
-
 
 }
 
